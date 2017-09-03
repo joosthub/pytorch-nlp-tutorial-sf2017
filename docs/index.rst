@@ -19,5 +19,5 @@ Natural Language Processing (NLP) with PyTorch
 Hello! This is a directory of resources for a training tutorial to be
 given at the O'Reilly AI Conference in San Francisco on September 17 and 18, 2017.
 
-At this moment, this page is currently being finalized and is not available.
+At this moment, this page is being finalized and is not available.
 Please check again closer to the tutorial date.

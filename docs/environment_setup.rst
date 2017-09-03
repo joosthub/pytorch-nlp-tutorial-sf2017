@@ -18,7 +18,7 @@ dependency management.
 
 In practice, Anaconda can be used to manage different environment and packages.
 This setup document will assume that you have Anaconda installed as your default
-Python distribution. 
+Python distribution.
 
 You can download Anaconda here: https://www.continuum.io/downloads
 
@@ -63,8 +63,7 @@ the environment.
 2b. Install IPython and Jupyter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We include a :code:`requirements.txt` for the core of the dependencies, but
-there are some basic dependencies not included in it:
+Two core dependencies are IPython and Jupyter.  Let's install them first:
 
 .. code-block:: bash
 
@@ -78,8 +77,8 @@ needs to be linked:
 
    python -m ipykernel install --user --name dl4nlp
 
-2c. Installing CUDA (for those with Nvidia GPU enabled laptops)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2c. Installing CUDA (optional)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you have a CUDA compatible GPU, it is worthwhile to take advantage of it as
 it can significantly speedup training and make your PyTorch experimentation more
@@ -108,7 +107,7 @@ The widget on PyTorch.org will let you select the right command line for your sp
 Make sure you have PyTorch 2.0 or higher.
 
 2e. Clone (or Download) Repository
-^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 At this point, you may have already cloned the tutorial repository.  But if
 you have not, you will need it for the next step.
