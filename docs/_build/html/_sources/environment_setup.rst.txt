@@ -77,18 +77,19 @@ needs to be linked:
 2c. Install PyTorch
 ^^^^^^^^^^^^^^^^^^^
 
-# assume we are inside a folder dl4nlp
-# note: that if you alternatively download the zip and unzip it to
-#   a folder, it will be named something else
-git clone https://github.com/joosthub/pytorch-nlp-tutorial.git
-cd pytorch-nlp-tutorial
+There are instructions on http://pytorch.org which detail how to install it.
+If you have been following along so far and have anaconda installed, you can simply do:
 
-pip install -r requirements.txt
+.. code-block:: bash
 
-# going back to root folder
-cd ..
+   conda install pytorch torchvision cuda80 -c soumith
 
-# install torch text
-git clone https://github.com/pytorch/text.git
-cd text
-python setup.py install
+2d. Install Dependencies from Repository
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Assuming the you have cloned the repository, please navigate to the directory
+in your terminal.  Then, you can do the following:
+
+.. code-block:: bash
+
+   pip install -r requirements.txt

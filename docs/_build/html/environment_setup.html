@@ -96,6 +96,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#a-activate-the-environment">2a. Activate the environment</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#b-install-ipython-and-jupyter">2b. Install ipython and jupyter</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#c-install-pytorch">2c. Install PyTorch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-install-dependencies-from-repository">2d. Install Dependencies from Repository</a></li>
 </ul>
 </li>
 </ul>
@@ -221,18 +222,19 @@ needs to be linked:</p>
 </div>
 <div class="section" id="c-install-pytorch">
 <h3>2c. Install PyTorch<a class="headerlink" href="#c-install-pytorch" title="Permalink to this headline">¶</a></h3>
-<p># assume we are inside a folder dl4nlp
-# note: that if you alternatively download the zip and unzip it to
-#   a folder, it will be named something else
-git clone <a class="reference external" href="https://github.com/joosthub/pytorch-nlp-tutorial.git">https://github.com/joosthub/pytorch-nlp-tutorial.git</a>
-cd pytorch-nlp-tutorial</p>
-<p>pip install -r requirements.txt</p>
-<p># going back to root folder
-cd ..</p>
-<p># install torch text
-git clone <a class="reference external" href="https://github.com/pytorch/text.git">https://github.com/pytorch/text.git</a>
-cd text
-python setup.py install</p>
+<p>There are instructions on <a class="reference external" href="http://pytorch.org">http://pytorch.org</a> which detail how to install it.
+If you have been following along so far and have anaconda installed, you can simply do:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda install pytorch torchvision cuda80 -c soumith
+</pre></div>
+</div>
+</div>
+<div class="section" id="d-install-dependencies-from-repository">
+<h3>2d. Install Dependencies from Repository<a class="headerlink" href="#d-install-dependencies-from-repository" title="Permalink to this headline">¶</a></h3>
+<p>Assuming the you have cloned the repository, please navigate to the directory
+in your terminal.  Then, you can do the following:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install -r requirements.txt
+</pre></div>
+</div>
 </div>
 </div>
 </div>
