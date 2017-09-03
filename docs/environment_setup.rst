@@ -18,8 +18,7 @@ dependency management.
 
 In practice, Anaconda can be used to manage different environment and packages.
 This setup document will assume that you have anaconda installed as your default
-Python distribution.  When needed, we will include alternate instructions in case
-you do not use Anaconda (though, you probably should).
+Python distribution. 
 
 You can download Anaconda here: https://www.continuum.io/downloads
 
