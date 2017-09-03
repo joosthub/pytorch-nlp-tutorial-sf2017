@@ -79,8 +79,8 @@ needs to be linked:
 
    python -m ipykernel install --user --name dl4nlp
 
-2b1. Installing CUDA (for those with Nvidia GPU enabled laptops)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2c. Installing CUDA (for those with Nvidia GPU enabled laptops)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If you have a CUDA compatible GPU, it is worthwhile to take advantage of it as
 it can significantly speedup training and make your PyTorch experimentation more
@@ -94,7 +94,7 @@ To install CUDA:
 
 Make sure you have the latest CUDA (8.0) and CUDNN (7.0).
 
-2c. Install PyTorch
+2d. Install PyTorch
 ^^^^^^^^^^^^^^^^^^^
 
 There are instructions on http://pytorch.org which detail how to install it.
@@ -108,12 +108,24 @@ If you have been following along so far and have anaconda installed with CUDA en
 The widget on PyTorch.org will let you select the right command line for your specific OS/Arch.
 Make sure you have PyTorch 2.0 or higher.
 
+2e. Clone (or Download) Repository
+^^^^^^^^^^^^^^^^^^^^
 
-2d. Install Dependencies from Repository
+At this point, you may have already cloned the tutorial repository.  But if
+you have not, you will need it for the next step.
+
+.. code-block:: bash
+
+   git clone https://github.com/joosthub/pytorch-nlp-tutorial-sf2017.git
+
+If you do not have git or do not want to use it, you can also
+`download the repository as a zip file <https://github.com/joosthub/pytorch-nlp-tutorial-sf2017/archive/master.zip>`_
+
+2f. Install Dependencies from Repository
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Assuming the you have cloned the repository, please navigate to the directory
-in your terminal.  Then, you can do the following:
+Assuming the you have cloned (or downloaded and unzipped) the repository,
+please navigate to the directory in your terminal.  Then, you can do the following:
 
 .. code-block:: bash
 
