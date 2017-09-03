@@ -17,12 +17,12 @@ We chose Anaconda for this tutorial as it significantly simplifies Python
 dependency management.
 
 In practice, Anaconda can be used to manage different environment and packages.
-This setup document will assume that you have anaconda installed as your default
+This setup document will assume that you have Anaconda installed as your default
 Python distribution. 
 
 You can download Anaconda here: https://www.continuum.io/downloads
 
-After installing anaconda, you can access its command-line interface
+After installing Anaconda, you can access its command-line interface
 with the :code:`conda` command.
 
 
@@ -33,7 +33,7 @@ Environments are a tool for sanitary software development.  By this, we mean tha
 you can install specific versions of packages without worrying that it breaks
 a dependency elsewhere.
 
-Here is how you can create an environment with anaconda
+Here is how you can create an environment with Anaconda
 
 .. code-block:: bash
 
@@ -97,7 +97,7 @@ Make sure you have the latest CUDA (8.0) and CUDNN (7.0).
 ^^^^^^^^^^^^^^^^^^^
 
 There are instructions on http://pytorch.org which detail how to install it.
-If you have been following along so far and have anaconda installed with CUDA enabled, you can simply do:
+If you have been following along so far and have Anaconda installed with CUDA enabled, you can simply do:
 
 
 .. code-block:: bash
