@@ -38,6 +38,9 @@ Here is how you can create an environment with anaconda
 2. Install Dependencies
 -----------------------
 
+2a. Activate the environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 After creating the environment, you need to **activate** the environment:
 
 .. code-block:: bash
@@ -52,19 +55,27 @@ With the environment activated, any installation commands
 Anaconda's install command :code:`conda install X`) will only install inside
 the environment.
 
+2b. Install ipython and jupyter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-There are some dependencies are not included in our :code:`requirements.txt`:
+We include a :code:`requirements.txt` for the core of the dependencies, but
+there are some basic dependencies not included in it:
 
 .. code-block:: bash
 
    conda install ipython
    conda install jupyter
 
+To allow a jupyter notebooks to use this environment as their kernel, it
+needs to be linked:
+
+.. code-block:: bash
+
    python -m ipykernel install --user --name dl4nlp
 
 
-# install pytorch
-# visit pytorch.org
+2c. Install PyTorch
+^^^^^^^^^^^^^^^^^^^
 
 # assume we are inside a folder dl4nlp
 # note: that if you alternatively download the zip and unzip it to

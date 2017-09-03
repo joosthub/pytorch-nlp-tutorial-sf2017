@@ -92,7 +92,12 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Environment Setup</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#get-anaconda">0. Get Anaconda</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-a-new-environment">1. Create a new environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#install-dependencies">2. Install Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-dependencies">2. Install Dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-activate-the-environment">2a. Activate the environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-install-ipython-and-jupyter">2b. Install ipython and jupyter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-install-pytorch">2c. Install PyTorch</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html">Frequency Asked Questions</a></li>
@@ -187,6 +192,8 @@ a dependency elsewhere.</p>
 </div>
 <div class="section" id="install-dependencies">
 <h2>2. Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-activate-the-environment">
+<h3>2a. Activate the environment<a class="headerlink" href="#a-activate-the-environment" title="Permalink to this headline">¶</a></h3>
 <p>After creating the environment, you need to <strong>activate</strong> the environment:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> activate dl4nlp
 </pre></div>
@@ -197,15 +204,23 @@ console prompt to let you know it is active.</p>
 (whether it is <code class="code docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">X</span></code>, <code class="code docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> or using
 Anaconda&#8217;s install command <code class="code docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">X</span></code>) will only install inside
 the environment.</p>
-<p>There are some dependencies are not included in our <code class="code docutils literal"><span class="pre">requirements.txt</span></code>:</p>
+</div>
+<div class="section" id="b-install-ipython-and-jupyter">
+<h3>2b. Install ipython and jupyter<a class="headerlink" href="#b-install-ipython-and-jupyter" title="Permalink to this headline">¶</a></h3>
+<p>We include a <code class="code docutils literal"><span class="pre">requirements.txt</span></code> for the core of the dependencies, but
+there are some basic dependencies not included in it:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>conda install ipython
 conda install jupyter
-
-python -m ipykernel install --user --name dl4nlp
 </pre></div>
 </div>
-<p># install pytorch
-# visit pytorch.org</p>
+<p>To allow a jupyter notebooks to use this environment as their kernel, it
+needs to be linked:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python -m ipykernel install --user --name dl4nlp
+</pre></div>
+</div>
+</div>
+<div class="section" id="c-install-pytorch">
+<h3>2c. Install PyTorch<a class="headerlink" href="#c-install-pytorch" title="Permalink to this headline">¶</a></h3>
 <p># assume we are inside a folder dl4nlp
 # note: that if you alternatively download the zip and unzip it to
 #   a folder, it will be named something else
@@ -218,6 +233,7 @@ cd ..</p>
 git clone <a class="reference external" href="https://github.com/pytorch/text.git">https://github.com/pytorch/text.git</a>
 cd text
 python setup.py install</p>
+</div>
 </div>
 </div>
 
