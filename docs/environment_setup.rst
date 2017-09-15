@@ -8,6 +8,8 @@ a virtual machine to get a UNIX-like environment to continue with the rest of th
 instruction. A lot of this instruction is more verbose than needed to accomodate
 participants of different skill levels.
 
+**Please note that these are only optional.  On the first day of this training, you will be provided with a link to a JupyterHub instance where the environment will be pre-made and ready to go!**
+
 0. Get Anaconda
 ---------------
 
@@ -79,6 +81,9 @@ needs to be linked:
 
 2c. Installing CUDA (optional)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+NOTE: CUDA is currently not supported out of the conda package control manager.
+Please refer to pytorch's github repository for compilation instructions.
 
 If you have a CUDA compatible GPU, it is worthwhile to take advantage of it as
 it can significantly speedup training and make your PyTorch experimentation more
