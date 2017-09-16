@@ -2,7 +2,7 @@ import os
 from os.path import join
 
 
-CUDA = os.getenv('ENABLE_CUDA_DL4NLP', False)
+CUDA = bool(os.getenv('ENABLE_CUDA_DL4NLP', False))
 
 ROOT_DIR = os.getenv('DL4NLPROOT', None)
 if ROOT_DIR is None:

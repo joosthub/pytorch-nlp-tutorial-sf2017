@@ -13,4 +13,8 @@ However, during that time and after the training ends, if you would like to run 
 DL4NLPROOT=$(pwd) jupyter notebook --notebook-dir=$(pwd)
 ```
 
+If you would like to run with CUDA enabled, please runw ith
 
+```bash
+ENABLE_CUDA_DL4NLP=1 DL4NLPROOT=$(pwd) jupyter notebook --notebook-dir=$(pwd)
+```
