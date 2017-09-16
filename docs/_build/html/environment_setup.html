@@ -1,0 +1,349 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Environment Setup &mdash; NLP with PyTorch  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="NLP with PyTorch  documentation" href="index.html"/>
+        <link rel="next" title="Frequency Asked Questions" href="faq.html"/>
+        <link rel="prev" title="Getting the Data" href="download_data.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> NLP with PyTorch
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Resources</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="download_data.html">Getting the Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Environment Setup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#get-anaconda">0. Get Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-new-environment">1. Create a new environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-dependencies">2. Install Dependencies</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#a-activate-the-environment">2a. Activate the environment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#b-install-ipython-and-jupyter">2b. Install IPython and Jupyter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#c-installing-cuda-optional">2c. Installing CUDA (optional)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#d-install-pytorch">2d. Install PyTorch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#e-clone-or-download-repository">2e. Clone (or Download) Repository</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#f-install-dependencies-from-repository">2f. Install Dependencies from Repository</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">Frequency Asked Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NLP with PyTorch</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Environment Setup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/environment_setup.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="environment-setup">
+<h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
+<p>On this page, you will find not only the list of dependencies to install
+for the tutorial, but a description of how to install them. This tutorial assumes
+you have a laptop with OSX or Linux. If you use Windows, you might have to install
+a virtual machine to get a UNIX-like environment to continue with the rest of this
+instruction. A lot of this instruction is more verbose than needed to accomodate
+participants of different skill levels.</p>
+<p><strong>Please note that these are only optional.  On the first day of this training, you will be provided with a link to a JupyterHub instance where the environment will be pre-made and ready to go!</strong></p>
+<div class="section" id="get-anaconda">
+<h2>0. Get Anaconda<a class="headerlink" href="#get-anaconda" title="Permalink to this headline">¶</a></h2>
+<p>Anaconda is a Python (and R) distribution that aims to provide everything
+needed for common scientific and machine learning situations out-of-the-box.
+We chose Anaconda for this tutorial as it significantly simplifies Python
+dependency management.</p>
+<p>In practice, Anaconda can be used to manage different environment and packages.
+This setup document will assume that you have Anaconda installed as your default
+Python distribution.</p>
+<p>You can download Anaconda here: <a class="reference external" href="https://www.continuum.io/downloads">https://www.continuum.io/downloads</a></p>
+<p>After installing Anaconda, you can access its command-line interface
+with the <code class="code docutils literal"><span class="pre">conda</span></code> command.</p>
+</div>
+<div class="section" id="create-a-new-environment">
+<h2>1. Create a new environment<a class="headerlink" href="#create-a-new-environment" title="Permalink to this headline">¶</a></h2>
+<p>Environments are a tool for sanitary software development.  By this, we mean that
+you can install specific versions of packages without worrying that it breaks
+a dependency elsewhere.</p>
+<p>Here is how you can create an environment with Anaconda</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda create -n dl4nlp <span class="nv">python</span><span class="o">=</span>3.6
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-dependencies">
+<h2>2. Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-activate-the-environment">
+<h3>2a. Activate the environment<a class="headerlink" href="#a-activate-the-environment" title="Permalink to this headline">¶</a></h3>
+<p>After creating the environment, you need to <strong>activate</strong> the environment:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> activate dl4nlp
+</pre></div>
+</div>
+<p>After an environment is activated, it might prepend/append itself to your
+console prompt to let you know it is active.</p>
+<p>With the environment activated, any installation commands
+(whether it is <code class="code docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">X</span></code>, <code class="code docutils literal"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">install</span></code> or using
+Anaconda&#8217;s install command <code class="code docutils literal"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">X</span></code>) will only install inside
+the environment.</p>
+</div>
+<div class="section" id="b-install-ipython-and-jupyter">
+<h3>2b. Install IPython and Jupyter<a class="headerlink" href="#b-install-ipython-and-jupyter" title="Permalink to this headline">¶</a></h3>
+<p>Two core dependencies are IPython and Jupyter.  Let&#8217;s install them first:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda install ipython
+conda install jupyter
+</pre></div>
+</div>
+<p>To allow a jupyter notebooks to use this environment as their kernel, it
+needs to be linked:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python -m ipykernel install --user --name dl4nlp
+</pre></div>
+</div>
+</div>
+<div class="section" id="c-installing-cuda-optional">
+<h3>2c. Installing CUDA (optional)<a class="headerlink" href="#c-installing-cuda-optional" title="Permalink to this headline">¶</a></h3>
+<p>NOTE: CUDA is currently not supported out of the conda package control manager.
+Please refer to pytorch&#8217;s github repository for compilation instructions.</p>
+<p>If you have a CUDA compatible GPU, it is worthwhile to take advantage of it as
+it can significantly speedup training and make your PyTorch experimentation more
+enjoyable.</p>
+<p>To install CUDA:</p>
+<ol class="arabic simple">
+<li>Download CUDA appropriate to your OS/Arch from <a class="reference external" href="https://developer.nvidia.com/cuda-downloads">here</a>.</li>
+<li>Follow installation steps for your architecture/OS. For Ubuntu/x86_64, see <a class="reference external" href="http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ubuntu-installation">here</a>.</li>
+<li>Download and install CUDNN from <a class="reference external" href="https://developer.nvidia.com/cudnn">here</a>.</li>
+</ol>
+<p>Make sure you have the latest CUDA (8.0) and CUDNN (7.0).</p>
+</div>
+<div class="section" id="d-install-pytorch">
+<h3>2d. Install PyTorch<a class="headerlink" href="#d-install-pytorch" title="Permalink to this headline">¶</a></h3>
+<p>There are instructions on <a class="reference external" href="http://pytorch.org">http://pytorch.org</a> which detail how to install it.
+If you have been following along so far and have Anaconda installed with CUDA enabled, you can simply do:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>conda install pytorch torchvision cuda80 -c soumith
+</pre></div>
+</div>
+<p>The widget on PyTorch.org will let you select the right command line for your specific OS/Arch.
+Make sure you have PyTorch 2.0 or higher.</p>
+</div>
+<div class="section" id="e-clone-or-download-repository">
+<h3>2e. Clone (or Download) Repository<a class="headerlink" href="#e-clone-or-download-repository" title="Permalink to this headline">¶</a></h3>
+<p>At this point, you may have already cloned the tutorial repository.  But if
+you have not, you will need it for the next step.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone https://github.com/joosthub/pytorch-nlp-tutorial-sf2017.git
+</pre></div>
+</div>
+<p>If you do not have git or do not want to use it, you can also
+<a class="reference external" href="https://github.com/joosthub/pytorch-nlp-tutorial-sf2017/archive/master.zip">download the repository as a zip file</a></p>
+</div>
+<div class="section" id="f-install-dependencies-from-repository">
+<h3>2f. Install Dependencies from Repository<a class="headerlink" href="#f-install-dependencies-from-repository" title="Permalink to this headline">¶</a></h3>
+<p>Assuming the you have cloned (or downloaded and unzipped) the repository,
+please navigate to the directory in your terminal.  Then, you can do the following:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install -r requirements.txt
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="faq.html" class="btn btn-neutral float-right" title="Frequency Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="download_data.html" class="btn btn-neutral" title="Getting the Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Brian McMahan and Delip Rao.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

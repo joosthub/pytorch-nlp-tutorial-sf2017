@@ -1,0 +1,30 @@
+Day 2
+=====
+
+Sequence Modeling
+- Basics of Modeling Sequences
+- Represent sequences as tensors
+
+
+Recurrent Neural Networks (RNNs)
+- Basic Mechanics
+- Exercise: Character-RNN
+- Gated Variants (LSTM and GRU)
+- Structural Variants (Bidirectional, Stacked, Tree)
+
+Structured Prediction Methods
+- Greedy Selection
+- Monte Carlo methods
+- Beam Search
+- Viterbi Decoding
+
+Sequence-to-Sequence Problems
+- Translation
+- Summarization
+- Tagging (POS, BIO, etc)
+
+Advanced Topics
+- Attention
+- Sequence-to-Sequence
+- Memory Networks
+
