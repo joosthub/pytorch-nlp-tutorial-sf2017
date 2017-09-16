@@ -1,5 +1,5 @@
 import os
-from os.path import join 
+from os.path import join
 
 
 CUDA = os.getenv('ENABLE_CUDA_DL4NLP', False)
@@ -14,8 +14,6 @@ ZOO_DIR = join(ROOT_DIR, 'modelzoo')
 
 GLOVE_FILENAME = join(DATA_DIR, 'glove.6B.100d.txt')
 
-#NAMES_TRAIN_FILENAME = join(DATA_DIR, 'names_train.csv')
-#NAMES_TEST_FILENAME = join(DATA_DIR, 'names_test.csv')
 FIRSTNAMES_CSV = join(DATA_DIR, 'firstnames.csv')
 
 SURNAMES_CSV = join(DATA_DIR, 'surnames.csv')
@@ -40,7 +38,7 @@ IGNORE_INDEX_VALUE = -1
 
 class ZOO:
     charnn_surname_classifer = {
-        'filename': join(ZOO_DIR, 
+        'filename': join(ZOO_DIR,
                          'charnn_emb16_hid64_surnames_classify.state'),
         'vocab': join(ZOO_DIR, 'surnames_classify.vocab'),
         'comments': 'pre-trained surname classifier',
@@ -51,7 +49,7 @@ class ZOO:
         }
     }
     charnn_surname_predicter = {
-        'filename': join(ZOO_DIR, 
+        'filename': join(ZOO_DIR,
                          'charnn_emb16_hid64_surnames_predict.state'),
         'vocab': join(ZOO_DIR, 'surnames_classify.vocab'),
         'comments': 'pre-trained surname sequence prediction (& generation model)',
@@ -62,7 +60,7 @@ class ZOO:
         }
     }
     charnn_surname_conditioned_predicter = {
-        'filename': join(ZOO_DIR, 
+        'filename': join(ZOO_DIR,
                          'charnn_emb16_hid64_surnames_conditionally_predict.state'),
         'vocab': join(ZOO_DIR, 'surnames_classify.vocab'),
         'comments': 'pre-trained surname conditioned sequence prediction (& conditioned generation)',
@@ -73,7 +71,7 @@ class ZOO:
         }
     }
     wordrnn_trump_tweet_predicter = {
-        'filename': join(ZOO_DIR, 
+        'filename': join(ZOO_DIR,
                          'wordrnn_emb100_hid64_trump_tweets_predict.state'),
         'vocab': join(ZOO_DIR, 'trump_twitter.vocab'),
         'comments': 'pre-trained trump sequence prediction (& generation)',
