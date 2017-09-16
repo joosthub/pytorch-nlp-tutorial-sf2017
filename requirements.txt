@@ -1,0 +1,10 @@
+pandas
+nltk
+annoy
+seaborn
+numpy
+matplotlib
+scikit-learn
+tqdm
+ipywidgets
+graphviz
