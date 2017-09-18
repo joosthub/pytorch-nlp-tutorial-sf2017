@@ -9,11 +9,18 @@ Natural Language Processing (NLP) with PyTorch
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Resources
+   :caption: Extra Resources
 
    download_data
    environment_setup
    faq
+
+.. toctree::
+   :hidden:
+   :caption: Daily Materials
+
+   day1/index.rst
+
 
 
 Hello! This is a directory of resources for a training tutorial to be
