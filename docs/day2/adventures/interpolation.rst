@@ -34,6 +34,6 @@ To do this exercise, write a function that has the following signature:
        print('awesome stuff here')
 
 
-This shoudl retrieve the :code:`init_vectors` for two different nationalities. Then, using the weight, combine the init vectors as :code:`weight * init_vector1 + (1 - weight) * init_vector2`.
+This should retrieve the :code:`init_vectors` for two different nationalities. Then, using the weight, combine the init vectors as :code:`weight * init_vector1 + (1 - weight) * init_vector2`.
 
 For fun, after you finish this function, write a for loop which loops over the weight from 0.1 to 0.9 to see how it affects the generation.
