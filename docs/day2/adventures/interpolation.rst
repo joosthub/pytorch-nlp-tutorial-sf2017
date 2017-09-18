@@ -30,7 +30,7 @@ To do this exercise, write a function that has the following signature:
 
 .. code-block:: python
 
-   def interpolate_n_samples_from_two_nationalities(nationality1, nationality1, weight, n=10, temp=0.8):
+   def interpolate_n_samples_from_two_nationalities(nationality1, nationality2, weight, n=10, temp=0.8):
        print('awesome stuff here')
 
 
