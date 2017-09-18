@@ -14,13 +14,22 @@ Natural Language Processing (NLP) with PyTorch
    download_data
    environment_setup
    faq
+   Recipes <recipes/index>
 
 .. toctree::
    :hidden:
-   :caption: Daily Materials
+   :caption: Day 1 Materials
 
-   day1/index.rst
+   Take Home Exercises <day1/takehome>
 
+.. toctree::
+   :hidden:
+   :maxdepth: 3
+   :caption: Day 2 Materials
+
+   Warm-Up Exercise <day2/warmup>
+   Choose Your Own Adventure <day2/adventures/index>
+   Neural Network Patterns <day2/patterns/index>
 
 
 Hello! This is a directory of resources for a training tutorial to be
